@@ -3,210 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Its Just Joe Games | Cloud Gaming & Indie Development</title>
-  <meta name="description" content="Explore the future of gaming with It’s Just Joe Games. From cloud gaming insights and gaming podcasts to indie game development.">
-  <meta name="keywords" content="cloud gaming, Amazon Luna, GeForce Now, Xbox Cloud Gaming, Boosteroid, indie game development, gaming podcast, It's Just Joe Games">
-  
-  <!-- Fonts -->
+  <title>Its Just Joe Games | Future of Gaming</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
-  <!-- Tailwind CSS for Utility Styling -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
-<!-- AOS CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<!-- AOS JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="bg-black text-gray-200 font-roboto">
-
-  <!-- Header with Navigation and Social Links -->
-  <header class="bg-gray-900 p-4 shadow-md flex justify-between items-center glass-effect">
-    <div class="logo text-yellow-500 font-montserrat text-2xl">Its Just Joe Games</div>
-    <!-- Hamburger Icon (visible on smaller screens) -->
-  <div id="menu-toggle" class="menu-toggle text-yellow-500 text-3xl cursor-pointer md:hidden">
-    <i class="fas fa-bars"></i>
-  </div>
-
-  <!-- Navigation Links -->
-  <nav id="navbar" class="nav-links flex gap-6 md:flex hidden">
-    <a href="#home" class="hover:text-yellow-400">Home</a>
-    <a href="#about" class="hover:text-yellow-400">About Us</a>
-    <a href="#content" class="hover:text-yellow-400">Content</a>
-    <a href="#games" class="hover:text-yellow-400">Games</a>
-    <!-- <a href="#community" class="hover:text-yellow-400">Community & Resources</a> -->
-    <a href="#contact" class="hover:text-yellow-400">Contact</a>
-  </nav>
-
-  <!-- Social Links (always visible) -->
-  <div class="social-links flex space-x-4">
-    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube text-yellow-500 hover:text-yellow-400"></i></a>
-    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter text-yellow-500 hover:text-yellow-400"></i></a>
-    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok text-yellow-500 hover:text-yellow-400"></i></a>
-    <a href="https://steamcommunity.com" target="_blank"><i class="fab fa-steam text-yellow-500 hover:text-yellow-400"></i></a>
-  </div>
+  <!-- Header -->
+  <header>
+    <div class="logo">It’s Just Joe Games</div>
+    <nav class="nav-links hidden md:flex">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#content">Content</a>
+      <a href="#games">Games</a>
+      <!-- <a href="#community">Community & Resources</a> -->
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="social-links">
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero bg-center bg-cover text-center py-20" style="background: url('assets/pattern.png') center/repeat, linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));" data-aos="fade-up">
-    <div class="hero-content max-w-xl mx-auto">
-      <h1 class="text-4xl font-montserrat text-yellow-500 mb-4">Your Portal to the Future of Gaming</h1>
-      <p class="text-lg mb-6">Dive into cloud gaming, industry insights, and exclusive indie games with Its Just Joe Games — where gaming meets innovation.</p>
-      <a href="#content" class="cta-button gradient-button transition transform hover:scale-105">Explore Content</a>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>The Future of Gaming</h1>
+      <p>Dive into cloud gaming, industry insights, and exclusive indie games with Its Just Joe Games — where gaming meets innovation.</p>
+      <a href="#content" class="cta-button">Explore Content</a>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about p-10 bg-gray-800 text-gray-200" data-aos="fade-up">
-    <h2 class="text-3xl font-montserrat text-yellow-500 mb-4">About Its Just Joe Games</h2>
-    <p class="mb-6">Its Just Joe Games is a media company dedicated to exploring the world of cloud gaming, indie game development, and tech innovation. Our mission is to deliver insightful, entertaining, and accessible content that keeps gamers and tech enthusiasts at the forefront of the industry.</p>
-    
-    <h3 class="text-2xl font-montserrat text-yellow-400 mt-8 mb-4">Our Story</h3>
-    <p class="mb-6">Founded by a Army veteran, passionate creator and gamer, Its Just Joe Games began as a vision to bring gamers and tech lovers closer to the future of gaming. With a focus on cloud gaming and independent game development, we’re committed to making gaming accessible and exciting for everyone.</p>
-    
-    <h3 class="text-2xl font-montserrat text-yellow-400 mt-8 mb-4">What We Do</h3>
-    <p class="mb-6">We create content across multiple platforms to engage our audience. Through our YouTube channel, you’ll find tutorials, reviews, and live commentary on the latest in gaming and tech. Our podcast, The Game Loop, dives into the hottest cloud gaming trends and industry news, giving you an insider’s perspective on what’s next in the gaming world. As game developers, we’re also bringing unique indie gaming experiences to players worldwide.</p>
-
-    <h3 class="text-2xl font-montserrat text-yellow-400 mt-8 mb-4">Vision</h3>
-    <p>Our goal is to create a vibrant, interconnected ecosystem of resources, content, and experiences that celebrates gaming and inspires our community to explore what’s possible.</p>
+  <section id="about" class="p-10 bg-gray-800 text-gray-200">
+    <h2 class="text-3xl font-montserrat text-teal-400 mb-6 text-center">About Us</h2>
+    <p class="text-center max-w-2xl mx-auto">Its Just Joe Games is a media company dedicated to exploring the world of cloud gaming, indie game development, and tech innovation. Our mission is to deliver insightful, entertaining, and accessible content that keeps gamers and tech enthusiasts at the forefront of the industry.</p>
   </section>
 
   <!-- Content Section -->
-  <section id="content" class="p-10 bg-gray-800 text-gray-200">
-    <h2 class="text-3xl font-montserrat text-yellow-500 mb-4">Content</h2>
-
-    <!-- YouTube Subsection -->
+  <section id="content" class="p-10 bg-gray-900 text-gray-200">
+    <h2 class="text-3xl font-montserrat text-teal-400 mb-4 text-center">Content</h2>
     <div class="youtube-content mb-10">
-      <h3 class="text-2xl font-montserrat text-yellow-400 mb-4">YouTube</h3>
-      <p class="mb-6">Catch our latest videos on cloud gaming, indie game development, and tech trends in gaming.</p>
-
-      <!-- Embedded YouTube Videos -->
+      <h3 class="text-2xl font-montserrat text-teal-300 mb-4">YouTube</h3>
       <div class="videos grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="video">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/9WqVxfLHYZY?si=GYwt5DVqHtKzWc-v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p class="mt-2">Testing the Logitech G Cloud with Starfield</p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/9WqVxfLHYZY?si=xjQCF3qdr8-vpqbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="video">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/MQ8BogizoJ4?si=a_7PmDgd6EupJSrf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p class="mt-2">DAVE THE DIVER Live Exploration!</p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/MQ8BogizoJ4?si=ldceGXLAx7yPzBP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <!-- Add more video embeds as needed -->
       </div>
-
-      <!-- Call-to-Action to Subscribe -->
-      <a href="https://www.youtube.com/your-channel-link" target="_blank" class="cta-button gradient-button mt-6 inline-block">Subscribe on YouTube</a>
+      <a href="https://www.youtube.com/your-channel-link" target="_blank" class="cta-button mt-6 inline-block">Subscribe on YouTube</a>
     </div>
 
-    <!-- Podcast Subsection -->
     <div class="podcast-content">
-      <h3 class="text-2xl font-montserrat text-yellow-400 mb-4">The Game Loop Podcast</h3>
-      <p class="mb-6">Join us weekly on The Game Loop, where we dive deep into the latest trends in cloud gaming, industry news, and more.</p>
-
-      <!-- Embedded Podcast Player (Example Placeholder) -->
-      <iframe src="https://podcasters.spotify.com/pod/show/thegameloop/embed" height="180px" width="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <a href="https://podcasters.spotify.com/pod/show/thegameloop" target="_blank" class="cta-button gradient-button mt-6 inline-block">Listen to More Episodes</a>
+      <h3 class="text-2xl font-montserrat text-teal-300 mb-4">The Game Loop Podcast</h3>
+      <iframe src="https://podcast-player-link" width="100%" height="180" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <a href="https://podcasters.spotify.com/pod/show/thegameloop" target="_blank" class="cta-button mt-6 inline-block">Listen to More Episodes</a>
     </div>
   </section>
 
   <!-- Games Section -->
-  <section id="games" class="p-10 bg-gray-900 text-gray-200">
-    <h2 class="text-3xl font-montserrat text-yellow-500 mb-4">Games in Development</h2>
-    <p class="mb-6">Discover the games we’re working on. Sign up for updates to stay informed on new releases!</p>
-
-    <!-- Grid Layout for Games in Development -->
+  <section id="games" class="p-10 bg-gray-800 text-gray-200">
+    <h2 class="text-3xl font-montserrat text-teal-400 mb-4 text-center">Games in Development</h2>
     <div class="games-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Out of Mana Game -->
-      <div class="game-item bg-gray-800 p-4 rounded-lg shadow-md text-center">
-        <div class="game-image mb-4">
-          <!-- Placeholder Image/GIF -->
-          <img src="placeholder-image.jpg" alt="Out of Mana" class="w-full rounded-md">
-        </div>
-        <h3 class="text-xl font-montserrat text-yellow-400">Out of Mana</h3>
-        <p class="mt-2">"Out of Mana" is a fast-paced 2D top-down bullet hell shooter where a wizard, stripped of his powers, must fight through hordes of enemies...</p>
-        <a href="https://signup-link-for-updates" target="_blank" class="cta-button gradient-button mt-4 inline-block">Sign Up for Updates</a>
+      <div class="game-item">
+        <img src="placeholder-image.jpg" alt="Out of Mana" class="w-full rounded-md mb-4">
+        <h3 class="text-xl font-montserrat text-teal-400">Out of Mana</h3>
+        <p class="mt-2">A fast-paced 2D top-down bullet hell shooter where a wizard fights through hordes of enemies...</p>
+        <a href="#newsletter" target="_blank" class="cta-button mt-4">Sign Up for Updates</a>
       </div>
-
-      <!-- Placeholder for Future Games -->
-      <div class="game-item bg-gray-800 p-4 rounded-lg shadow-md text-center">
-        <div class="game-image mb-4">
-          <!-- Placeholder Image/GIF -->
-          <img src="placeholder-image.jpg" alt="Future Game" class="w-full rounded-md">
-        </div>
-        <h3 class="text-xl font-montserrat text-yellow-400">Future Game Title</h3>
-        <p class="mt-2">Brief description of future game. This placeholder will be updated as more details become available.</p>
-        <a href="https://signup-link-for-updates" target="_blank" class="cta-button gradient-button mt-4 inline-block">Sign Up for Updates</a>
-      </div>
-
-      <!-- Add more games as needed -->
     </div>
   </section>
 
   <!-- Contact Section -->
-<section id="contact" class="p-10 bg-gray-800 text-gray-200">
-  <h2 class="text-3xl font-montserrat text-yellow-500 mb-4 text-center">Contact Us</h2>
-  
-  <!-- Card Container -->
-  <div class="contact-cards grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-    
-    <!-- Contact Info Card -->
-    <div class="contact-card bg-gray-900 p-6 rounded-lg shadow-md text-center">
-      <h3 class="text-2xl font-montserrat text-yellow-400 mb-4">Get in Touch</h3>
-      <p>Email: <a href="mailto:info@itsjustjoegames.com" class="text-yellow-500 hover:text-yellow-400">info@itsjustjoe.games</a></p>
-      <div class="social-links flex justify-center space-x-4 mt-4">
-        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube text-yellow-500 hover:text-yellow-400"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter text-yellow-500 hover:text-yellow-400"></i></a>
-        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok text-yellow-500 hover:text-yellow-400"></i></a>
-        <a href="https://steamcommunity.com" target="_blank"><i class="fab fa-steam text-yellow-500 hover:text-yellow-400"></i></a>
+  <section id="contact" class="p-10 bg-gray-800 text-gray-200">
+    <h2 class="text-3xl font-montserrat text-teal-400 mb-6 text-center">Contact Us</h2>
+    <div class="contact-cards grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+      <div class="contact-card">
+        <h3 class="text-2xl font-montserrat">Get in Touch</h3>
+        <p>Email: <a href="mailto:info@itsjustjoegames.com" class="text-teal-400 hover:text-teal-300">info@itsjustjoe.games</a></p>
+        <div class="social-links flex justify-center space-x-4 mt-4">
+          <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div id="newsletter" class="newsletter-card">
+        <h3 class="text-2xl font-montserrat">Join Our Newsletter</h3>
+        <p>Get the latest updates on our games, content, and news straight to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" class="input-field" required>
+          <button type="submit" class="cta-button">Subscribe</button>
+        </form>
       </div>
     </div>
-    
-    <!-- Newsletter Signup Card -->
-    <div class="newsletter-card bg-gray-900 p-6 rounded-lg shadow-md text-center">
-      <h3 class="text-2xl font-montserrat text-yellow-400 mb-4">Join Our Newsletter</h3>
-      <p class="mb-4">Get the latest updates on our games, content, and news straight to your inbox.</p>
-      <form class="newsletter-form">
-        <input type="email" placeholder="Enter your email" class="input-field p-3 w-full rounded mb-4" required>
-        <button type="submit" class="cta-button gradient-button w-full">Subscribe</button>
-      </form>
-    </div>
-  
-  </div>
-</section>
+  </section>
 
-  <!-- Footer with Social Media Links -->
-  <footer class="bg-gray-900 p-6 text-center text-gray-200 glass-effect mt-8">
-    <p class="mb-4">&copy; 2024 Its Just Joe Games</p>
-    <div class="social-links flex justify-center space-x-4">
-      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube text-yellow-500 hover:text-yellow-400"></i></a>
-      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter text-yellow-500 hover:text-yellow-400"></i></a>
-      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok text-yellow-500 hover:text-yellow-400"></i></a>
-      <a href="https://steamcommunity.com" target="_blank"><i class="fab fa-steam text-yellow-500 hover:text-yellow-400"></i></a>
-    </div>
+  <!-- Footer -->
+  <footer class="bg-gray-900 p-6 text-center text-gray-200">
+    <p>&copy; 2024 Its Just Joe Games - All Rights Reserved</p>
   </footer>
 
-</body>
+  <!-- JavaScript for Navigation Toggle -->
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    AOS.init({
-      duration: 800,       // Animation duration in milliseconds
-      easing: 'ease-in-out', // Easing function
-      once: true           // Whether animation should happen only once
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("hidden");
     });
-  });
-</script>
-  <script>
-  document.getElementById("menu-toggle").addEventListener("click", function() {
-    const navbar = document.getElementById("navbar");
-    navbar.classList.toggle("hidden");
-  });
-</script>
-
+  </script>
+</body>
 </html>
