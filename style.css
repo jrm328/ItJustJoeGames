@@ -70,7 +70,7 @@ header {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: url('pattern.png') center/cover, linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+  background: url('pattern.png') repeat, linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
 }
 
 .hero h1 {
