@@ -12,14 +12,6 @@ body {
   line-height: 1.6;
 }
 
-/* Custom Fonts */
-.font-montserrat {
-  font-family: 'Montserrat', sans-serif;
-}
-.font-roboto {
-  font-family: 'Roboto', sans-serif;
-}
-
 /* Header and Navigation */
 header {
   background-color: #1A1A1A;
@@ -38,7 +30,6 @@ header {
 }
 
 .nav-links {
-  display: flex;
   gap: 15px;
 }
 
@@ -64,12 +55,37 @@ header {
   color: #FFC107;
 }
 
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;  /* Hide nav links initially on smaller screens */
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    background-color: #1A1A1A;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  .menu-toggle {
+    display: block;  /* Show the hamburger menu icon on smaller screens */
+  }
+}
+
 /* Hero Section */
 .hero {
   text-align: center;
   padding: 80px 20px;
-  /*background: url('assets/pattern.png') repeat center;*/
-  background-size: auto;
+  background-color: #1A1A1A;  /* Solid color background without pattern */
 }
 
 .hero h1 {
@@ -138,19 +154,7 @@ header {
     align-items: center;
     text-align: center;
   }
-  
-  /* Center and stack navigation links */
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .social-links {
-    margin-top: 10px;
-  }
 
-  /* Adjust Hero Text and Button */
   .hero h1 {
     font-size: 2rem;
   }
@@ -161,12 +165,10 @@ header {
     font-size: 1rem;
   }
 
-  /* Adjust Video Grid */
   .videos {
     grid-template-columns: 1fr;
   }
 
-  /* Stack Game Items */
   .games-grid {
     grid-template-columns: 1fr;
   }
@@ -174,13 +176,9 @@ header {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Tablet-specific adjustments */
-
-  /* Adjust Video Grid to 2 Columns */
   .videos {
     grid-template-columns: 1fr 1fr;
   }
-
-  /* Games Grid Adjustments */
   .games-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -188,12 +186,9 @@ header {
 
 @media (min-width: 1025px) {
   /* Desktop-specific adjustments */
-  /* Video Grid: 2 columns */
   .videos {
     grid-template-columns: 1fr 1fr;
   }
-
-  /* Games Grid: 3 Columns */
   .games-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
