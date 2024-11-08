@@ -15,7 +15,7 @@ body {
 /* Header and Navigation */
 header {
   background-color: #141414;
-  padding: 15px;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,11 +30,13 @@ header {
 }
 
 .nav-links {
+  display: flex;
   gap: 20px;
 }
 
 .nav-links a {
   color: #D4D4D4;
+  text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -93,12 +95,64 @@ header {
   transform: scale(1.05);
 }
 
-/* Card Styles */
+/* Section Headings */
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #00C6D7;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Section Styles */
+section {
+  padding: 60px 40px;
+}
+
+/* Content Section */
+#content .videos {
+  display: grid;
+  gap: 20px;
+}
+
+#content .video {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Games Section */
+.games-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.game-item {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.game-item h3 {
+  color: #00C6D7;
+}
+
+.game-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Contact and Newsletter Cards */
 .contact-card, .newsletter-card {
   background-color: #141414;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
 }
 
 .contact-card h3, .newsletter-card h3 {
@@ -137,12 +191,50 @@ header {
   background-color: #00A6B7;
 }
 
+/* Footer */
+footer {
+  background-color: #141414;
+  padding: 20px;
+  text-align: center;
+  color: #D4D4D4;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
+  header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
   .hero h1 {
     font-size: 2.5rem;
   }
+  
   .cta-button {
     font-size: 1rem;
+  }
+
+  .games-grid, .videos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .games-grid, .videos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1025px) {
+  .games-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
