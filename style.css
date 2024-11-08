@@ -70,9 +70,10 @@ header {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: url('pattern.png') repeat, linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
-  background-size: auto;  /* Ensures the pattern retains its original size */
-  background-position: center;
+  background-image: url('assets/pattern.png'); /* Ensure the path is correct */
+  background-repeat: repeat;                   /* Repeat the pattern */
+  background-size: auto;                       /* Maintain original size */
+  background-position: center;                 /* Center the pattern */
 }
 
 .hero h1 {
