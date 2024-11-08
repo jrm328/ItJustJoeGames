@@ -60,6 +60,66 @@ header {
   display: none;
 }
 
+/* Contact Section */
+#contact {
+  padding: 40px 20px;
+  background-color: #1A1A1A;
+}
+
+.contact-cards {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-card, .newsletter-card {
+  background-color: #333;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card h3, .newsletter-card h3 {
+  color: #FFC107;
+}
+
+.contact-card p, .newsletter-card p {
+  color: #E0E0E0;
+  margin-bottom: 10px;
+}
+
+/* Input Field for Newsletter */
+.input-field {
+  background-color: #444;
+  color: #E0E0E0;
+  border: none;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: #bbb;
+}
+
+.newsletter-form button {
+  background: linear-gradient(45deg, #FFD700, #FFC107);
+  color: #121212;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #FFC107;
+}
+
+/* Responsive Contact Section */
+@media (max-width: 768px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Responsive Navigation */
 @media (max-width: 768px) {
   .nav-links {
