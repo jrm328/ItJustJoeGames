@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -25,10 +25,9 @@ header {
   background-color: #1A1A1A;
   padding: 20px;
   display: flex;
-  justify-between items-center;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(8px); /* Glassmorphism effect */
-  border-radius: 10px;
 }
 
 .logo {
@@ -38,8 +37,12 @@ header {
   font-size: 1.5rem;
 }
 
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
 .nav-links a {
-  margin: 0 15px;
   color: #FFD700;
   text-decoration: none;
   font-weight: 500;
@@ -50,30 +53,23 @@ header {
   color: #FFC107;
 }
 
-/* Social Links Styling */
 .social-links a {
   color: #FFD700;
   font-size: 1.5rem;
   transition: color 0.3s;
+  margin-left: 10px;
 }
 
 .social-links a:hover {
   color: #FFC107;
 }
 
-.social-links a i {
-  font-size: 1.5rem;
-  margin-right: 8px;
-}
-
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 100px 20px;
-  background-image: url('assets/pattern.png'); /* Ensure the path is correct */
-  background-repeat: repeat;                   /* Repeat the pattern */
-  background-size: auto;                       /* Maintain original size */
-  background-position: center;                 /* Center the pattern */
+  padding: 80px 20px;
+  background: url('assets/pattern.png') repeat center;
+  background-size: auto;
 }
 
 .hero h1 {
@@ -98,7 +94,7 @@ header {
   font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: background 0.3s, transform 0.3s;
 }
 
 .cta-button:hover {
@@ -106,82 +102,99 @@ header {
   transform: scale(1.05);
 }
 
-/* Box Shadow Effects */
-.box-shadow-light {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Content Section */
+#content .youtube-content, #content .podcast-content {
+  margin-bottom: 20px;
 }
 
-.header, .footer {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.videos {
+  display: grid;
+  gap: 20px;
 }
 
-/* Glassmorphism Effect */
-.glass-effect {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.video {
+  width: 100%;
+}
+
+/* Games Section */
+.games-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.game-item {
+  background-color: #333;
   padding: 20px;
-}
-
-/* About Section */
-.about {
-  padding: 60px 20px;
-  color: #E0E0E0;
-}
-
-.about h2, .about h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: #FFD700;
-  margin-bottom: 20px;
-}
-
-.about h3 {
-  color: #FFC107;
-}
-
-.about p {
-  margin-bottom: 20px;
-  line-height: 1.8;
-}
-
-/* Footer */
-footer {
+  border-radius: 8px;
   text-align: center;
-  padding: 20px;
-  background: #1A1A1A;
-  color: #E0E0E0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Button with Gradient */
-.gradient-button {
-  display: inline-block;
-  padding: 10px 25px;
-  background: linear-gradient(45deg, #FFD700, #FFC107);
-  color: #121212;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background 0.3s;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Stack header content on smaller screens */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Center and stack navigation links */
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+
+  /* Adjust Hero Text and Button */
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .cta-button {
+    font-size: 1rem;
+  }
+
+  /* Adjust Video Grid */
+  .videos {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stack Game Items */
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-/* Smooth Hover for Icons */
-.social-links a i {
-  font-size: 1.5rem;
-  transition: color 0.3s;
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Tablet-specific adjustments */
+
+  /* Adjust Video Grid to 2 Columns */
+  .videos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Games Grid Adjustments */
+  .games-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-/* Animations */
-[data-aos="fade-up"] {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease;
-}
+@media (min-width: 1025px) {
+  /* Desktop-specific adjustments */
+  /* Video Grid: 2 columns */
+  .videos {
+    grid-template-columns: 1fr 1fr;
+  }
 
-[data-aos="fade-up"].aos-animate {
-  opacity: 1;
-  transform: translateY(0);
+  /* Games Grid: 3 Columns */
+  .games-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
