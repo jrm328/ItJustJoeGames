@@ -31,20 +31,28 @@
   <!-- Header with Navigation and Social Links -->
   <header class="bg-gray-900 p-4 shadow-md flex justify-between items-center glass-effect">
     <div class="logo text-yellow-500 font-montserrat text-2xl">Its Just Joe Games</div>
-    <ul class="nav-links flex space-x-4">
-      <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
-      <li><a href="#about" class="hover:text-yellow-400">About Us</a></li>
-      <li><a href="#content" class="hover:text-yellow-400">Content</a></li>
-      <li><a href="#games" class="hover:text-yellow-400">Games</a></li>
-      <li><a href="#community" class="hover:text-yellow-400">Community & Resources</a></li>
-      <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
-    </ul>
-    <div class="social-links flex space-x-4">
-      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube text-yellow-500 hover:text-yellow-400"></i></a>
-      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter text-yellow-500 hover:text-yellow-400"></i></a>
-      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok text-yellow-500 hover:text-yellow-400"></i></a>
-      <a href="https://steamcommunity.com" target="_blank"><i class="fab fa-steam text-yellow-500 hover:text-yellow-400"></i></a>
-    </div>
+    <!-- Hamburger Icon (visible on smaller screens) -->
+  <div id="menu-toggle" class="menu-toggle text-yellow-500 text-3xl cursor-pointer md:hidden">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav id="navbar" class="nav-links flex gap-6 md:flex hidden">
+    <a href="#home" class="hover:text-yellow-400">Home</a>
+    <a href="#about" class="hover:text-yellow-400">About Us</a>
+    <a href="#content" class="hover:text-yellow-400">Content</a>
+    <a href="#games" class="hover:text-yellow-400">Games</a>
+    <a href="#community" class="hover:text-yellow-400">Community & Resources</a>
+    <a href="#contact" class="hover:text-yellow-400">Contact</a>
+  </nav>
+
+  <!-- Social Links (always visible) -->
+  <div class="social-links flex space-x-4">
+    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube text-yellow-500 hover:text-yellow-400"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter text-yellow-500 hover:text-yellow-400"></i></a>
+    <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok text-yellow-500 hover:text-yellow-400"></i></a>
+    <a href="https://steamcommunity.com" target="_blank"><i class="fab fa-steam text-yellow-500 hover:text-yellow-400"></i></a>
+  </div>
   </header>
 
   <!-- Hero Section -->
@@ -160,6 +168,12 @@
       easing: 'ease-in-out', // Easing function
       once: true           // Whether animation should happen only once
     });
+  });
+</script>
+  <script>
+  document.getElementById("menu-toggle").addEventListener("click", function() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("hidden");
   });
 </script>
 
