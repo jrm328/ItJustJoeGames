@@ -16,9 +16,12 @@
   <!-- Tailwind CSS for Utility Styling -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-  <!-- AOS (Animate on Scroll) for Scroll Animations -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- AOS JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script>
     AOS.init();
   </script>
@@ -49,7 +52,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero bg-center bg-cover text-center py-20" style="background: url('pattern.png') center/cover, linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));" data-aos="fade-up">
+  <section id="home" class="hero bg-center bg-cover text-center py-20" style="background: url('assets/pattern.png') center/cover, linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));" data-aos="fade-up">
     <div class="hero-content max-w-xl mx-auto">
       <h1 class="text-4xl font-montserrat text-yellow-500 mb-4">Your Portal to the Future of Gaming</h1>
       <p class="text-lg mb-6">Dive into cloud gaming, industry insights, and exclusive indie games with Its Just Joe Games — where gaming meets innovation.</p>
@@ -154,4 +157,14 @@
   </footer>
 
 </body>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      duration: 800,  // Animation duration in milliseconds
+      easing: 'ease-in-out',  // Easing type for animations
+      once: true  // Animate only once when scrolling down
+    });
+  });
+</script>
+
 </html>
