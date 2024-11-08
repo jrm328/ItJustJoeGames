@@ -1,0 +1,184 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #E0E0E0;
+  background-color: #121212;
+  line-height: 1.6;
+}
+
+/* Custom Fonts */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #1A1A1A;
+  padding: 20px;
+  display: flex;
+  justify-between items-center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px); /* Glassmorphism effect */
+  border-radius: 10px;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFD700;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FFC107;
+}
+
+/* Social Links Styling */
+.social-links a {
+  color: #FFD700;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #FFC107;
+}
+
+.social-links a i {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('pattern.png') center/cover, linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #E0E0E0;
+  margin-top: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: linear-gradient(45deg, #FFD700, #FFC107);
+  color: #121212;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #FFC107;
+  transform: scale(1.05);
+}
+
+/* Box Shadow Effects */
+.box-shadow-light {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header, .footer {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Glassmorphism Effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  color: #E0E0E0;
+}
+
+.about h2, .about h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+.about h3 {
+  color: #FFC107;
+}
+
+.about p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1A1A1A;
+  color: #E0E0E0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+}
+
+/* Button with Gradient */
+.gradient-button {
+  display: inline-block;
+  padding: 10px 25px;
+  background: linear-gradient(45deg, #FFD700, #FFC107);
+  color: #121212;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+/* Smooth Hover for Icons */
+.social-links a i {
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+/* Animations */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
