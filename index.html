@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>It’s Just Joe Games | Your Portal to the Future of Gaming</title>
+  <title>Its Just Joe Games | Your Portal to the Future of Gaming</title>
   
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -17,16 +17,23 @@
   
   <!-- Structured Data for SEO -->
   <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "VideoObject",
-    "name": "Sample Video Title",
-    "description": "Video description here",
-    "thumbnailUrl": "thumbnail.jpg",
-    "uploadDate": "2024-11-08T08:00:00+08:00",
-    "contentUrl": "https://www.youtube.com/embed/your-video-id"
+{
+  "@context": "http://schema.org",
+  "@type": "VideoObject",
+  "name": "The Game Loop Podcast | Level 3: Respawn or Shutdown?",
+  "description": "The Game Loop is your go-to weekly podcast for all things gaming!",
+  "thumbnailUrl": "assets/gameloop-img.png",
+  "uploadDate": "2024-10-24T08:00:00+08:00",
+  "contentUrl": "https://www.youtube.com/watch?v=02BphSpl-zc",
+  "embedUrl": "https://www.youtube.com/embed/02BphSpl-zc?si=-kqy32i2E-m-AuYk",
+  "duration": "PT29M14S",
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": "http://schema.org/WatchAction",
+    "userInteractionCount": 12345
   }
-  </script>
+}
+</script>
 </head>
 <body>
 
@@ -36,7 +43,7 @@
   <!-- Header -->
   <header class="bg-dark py-3">
     <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="text-teal font-weight-bold">It’s Just Joe Games</h1>
+      <h1 class="text-teal font-weight-bold">Its Just Joe Games</h1>
       <nav class="d-none d-md-flex">
         <a href="#home" class="text-light mx-3">Home</a>
         <a href="#about" class="text-light mx-3">About Us</a>
@@ -51,7 +58,7 @@
   <section id="home" class="hero text-center text-light py-5" style="background-image: url('https://placehold.co/1200x800');">
     <div class="container" data-aos="fade-up">
       <h1 class="display-4 font-weight-bold">Your Portal to the Future of Gaming</h1>
-      <p class="lead">Dive into cloud gaming, industry insights, and exclusive indie games with It’s Just Joe Games — where gaming meets innovation.</p>
+      <p class="lead">Dive into cloud gaming, industry insights, and exclusive indie games with Its Just Joe Games — where gaming meets innovation.</p>
       <a href="#content" class="cta-button mt-3">Explore Content</a>
     </div>
   </section>
@@ -60,8 +67,9 @@
   <section id="about" class="py-5 bg-dark text-light">
     <div class="container text-center" data-aos="fade-up">
       <h2 class="display-4 font-weight-bold text-teal">About Us</h2>
-      <p class="lead-white">It’s Just Joe Games is dedicated to cloud gaming, indie development, and tech innovation. We keep gamers and tech enthusiasts at the forefront with insightful content.</p>
+      <p class="lead-white">Its Just Joe Games is dedicated to cloud gaming, indie development, and tech innovation. We keep gamers and tech enthusiasts at the forefront with insightful content.</p>
       <img src="assets/about-img.png" alt="About Us" class="img-fluid mt-4">
+      <p class="lead-white">Founded by a passionate creator/gamer and U.S. Army veteran, It’s Just Joe Games began as a vision to bring gamers and tech lovers closer to the future of gaming. With a focus on cloud gaming and independent game development, we’re committed to making gaming accessible and exciting for everyone.</p>
     </div>
   </section>
 
@@ -74,11 +82,11 @@
           <h3 class="font-weight-bold text-center">YouTube</h3>
           <div class="card bg-dark text-light mb-3">
             <a href="#" data-toggle="modal" data-target="#videoModal1">
-              <img src="https://placehold.co/600x400" class="card-img-top" alt="Video Placeholder">
+              <img src="assets/gameloop-img.png" class="card-img-top" alt="Video Placeholder">
             </a>
             <div class="card-body">
-              <span class="tag">New</span>
-              <p class="card-text">Description of video content, focused on cloud gaming or other relevant topics.</p>
+              <span class="tag">Podcast</span>
+              <p class="card-text">The Game Loop is your go-to weekly podcast for all things gaming!</p>
             </div>
           </div>
         </div>
@@ -89,13 +97,13 @@
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Video Title</h5>
+              <h5 class="modal-title">The Game Loop Podcast | Level 3: Respawn or Shutdown?</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <iframe width="100%" height="400" src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/02BphSpl-zc?si=-kqy32i2E-m-AuYk" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -110,7 +118,7 @@
       <div class="row">
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card bg-dark text-light position-relative">
-            <img src="https://placehold.co/600x400" class="card-img-top" alt="Out of Mana">
+            <img src="assets/oom-img.png" class="card-img-top" alt="Out of Mana">
             <span class="progress-badge">In Development</span>
             <div class="card-body">
               <h4 class="card-title text-teal">Out of Mana</h4>
@@ -132,7 +140,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <p>Detailed description of the game, features, storyline, and gameplay.</p>
+              <p>Out of Mana is a fast-paced 2D top-down bullet hell shooter where a wizard, stripped of his powers, has to fight through hordes of enemies using nothing but brute force. Players navigate through elemental dungeon levels, battling unique enemies and bosses with increasingly wild weapons, all while unraveling a mystery that hints at betrayal. It’s magic meets mayhem in a quirky, action-packed adventure.</p>
             </div>
           </div>
         </div>
@@ -149,7 +157,7 @@
           <div class="card bg-dark text-light text-center">
             <div class="card-body">
               <h4 class="card-title">Get in Touch</h4>
-              <p>Email: <a href="mailto:info@itsjustjoegames.com" class="text-teal">info@itsjustjoegames.com</a></p>
+              <p>Email: <a href="mailto:info@itsjustjoegames.com" class="text-teal">info@itsjustjoe.games</a></p>
               <div class="d-flex justify-content-center mt-3">
                 <a href="https://youtube.com" class="text-teal mx-3"><i class="fab fa-youtube fa-2x"></i></a>
                 <a href="https://twitter.com" class="text-teal mx-3"><i class="fab fa-twitter fa-2x"></i></a>
@@ -177,7 +185,7 @@
 
   <!-- Footer -->
   <footer class="bg-dark text-center py-3 text-light">
-    <p>&copy; 2024 It’s Just Joe Games - All Rights Reserved</p>
+    <p>&copy; 2024 Its Just Joe Games - All Rights Reserved</p>
   </footer>
 
   <!-- Bootstrap JS and AOS for Scroll Animations -->
