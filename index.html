@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Its Just Joe Games | Your Portal to the Future of Gaming</title>
+
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7431XCSGQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7431XCSGQQ');
+</script>
   
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -93,7 +103,7 @@
     <div class="container" data-aos="fade-up">
       <h1 class="display-4 font-weight-bold">Your Portal to the Future of Gaming</h1>
       <p class="lead">Dive into cloud gaming, industry insights, and exclusive indie games with Its Just Joe Games — where gaming meets innovation.</p>
-      <a href="#content" class="cta-button mt-3">Explore Content</a>
+      <a href="#content" class="cta-button mt-3" onclick="gtag('event', 'click', {'event_category': 'button', 'event_label': 'Explore'});">Explore Content</a>
     </div>
   </section>
 
@@ -115,7 +125,7 @@
         <div class="col-lg-6 mb-4">
           <h3 class="font-weight-bold text-center">YouTube</h3>
           <div class="card bg-dark text-light mb-3">
-            <a href="#" data-toggle="modal" data-target="#videoModal1">
+            <a href="#" data-toggle="modal" data-target="#videoModal1" onclick="gtag('event', 'click', {'event_category': 'video', 'event_label': 'Video Modal'});">
               <img src="assets/gameloop-img.png" class="card-img-top" alt="Video Placeholder">
             </a>
             <div class="card-body">
@@ -157,7 +167,7 @@
             <div class="card-body">
               <h4 class="card-title text-teal">Out of Mana</h4>
               <p class="card-text">A fast-paced 2D top-down bullet hell shooter where a wizard fights through hordes of enemies.</p>
-              <a href="#" data-toggle="modal" data-target="#gameDetailModal1" class="cta-button mt-3"">Read More</a>
+              <a href="#" data-toggle="modal" data-target="#gameDetailModal1" class="cta-button mt-3" onclick="gtag('event', 'click', {'event_category': 'button', 'event_label': 'Game Read More'});">Read More</a>
             </div>
           </div>
         </div>
@@ -213,7 +223,7 @@
                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
                   <input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" />
                 </div>
-                <button type="submit" class="cta-button mt-3">Subscribe</button>
+                <button type="submit" class="cta-button mt-3" onclick="gtag('event', 'click', {'event_category': 'button', 'event_label': 'Subscribe'});">Subscribe</button>
               </form>
             <!-- Success Message -->
             <p id="success-message" style="display: none; color: #00C6D7; margin-top: 10px;">Thank you for subscribing!</p>
