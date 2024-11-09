@@ -109,19 +109,50 @@ section {
   padding: 60px 40px;
 }
 
-/* Content Section */
+/* Content Section - YouTube Video Cards */
 #content .videos {
   display: grid;
   gap: 20px;
+  grid-template-columns: 1fr; /* Single column by default */
 }
 
-#content .video {
-  width: 100%;
+#content .video-card {
+  background-color: #222;
+  padding: 20px;
   border-radius: 10px;
-  overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
 }
 
+#content .video-card:hover {
+  transform: translateY(-5px);
+}
+
+#content .video-card iframe {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  overflow: hidden;
+}
+
+#content .video-card p {
+  margin-top: 10px;
+  color: #A0A0A0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles for Video Cards */
+@media (min-width: 768px) {
+  #content .videos {
+    grid-template-columns: 1fr 1fr; /* Two columns on tablets and up */
+  }
+}
+
+@media (min-width: 1024px) {
+  #content .videos {
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns on larger desktops */
+  }
+}
 /* Games Section */
 .games-grid {
   display: grid;
