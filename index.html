@@ -201,20 +201,33 @@
         </div>
 
         <!-- Newsletter Signup with Validation -->
-        <div class="col-md-6 mb-4">
-          <div class="card bg-dark text-light text-center">
-            <div class="card-body">
-              <h4 class="card-title">Join Our Newsletter</h4>
-              <p>Get the latest updates straight to your inbox.</p>
-              <form id="newsletterForm">
-                <input type="email" placeholder="Enter your email" class="form-control mb-3" required>
-                <button type="submit" class="cta-button mt-3">Subscribe</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+        <!-- Newsletter Signup Form -->
+<div class="newsletter-card">
+  <h4 class="card-title text-teal">Join Our Newsletter</h4>
+  <p>Get the latest updates straight to your inbox.</p>
+  
+  <!-- Embed SendFox Form -->
+  <form method="post" action="https://sendfox.com/form/1kn2ly/m4j7k9" class="sendfox-form" id="m4j7k9" data-async="true" data-recaptcha="true">
+    <p><label for="sendfox_form_email">Email:</label>
+      <input type="email" id="sendfox_form_email" placeholder="Enter your email" name="email" required class="form-control mb-3" />
+    </p>
+    
+    <!-- Anti-Spam Hidden Field -->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+      <input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" />
     </div>
+    
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-teal w-100">Subscribe</button>
+  </form>
+  
+  <!-- Success Message -->
+  <p id="success-message" style="display: none; color: #00C6D7; margin-top: 10px;">Thank you for subscribing!</p>
+</div>
+
+<!-- SendFox Form Script -->
+<script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
+
   </section>
 
   <!-- Footer -->
@@ -239,6 +252,18 @@
           document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
         });
       });
+
+      // Form redirecting
+      document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("m4j7k9");
+  const successMessage = document.getElementById("success-message");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    // Asynchronous submission handled by SendFox
+    successMessage.style.display = "block";
+  });
+});
 
       // Newsletter Form Validation and Success Alert
       document.getElementById("newsletterForm").addEventListener("submit", function(event) {
