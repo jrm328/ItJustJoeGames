@@ -48,6 +48,12 @@ h1, h2 {
   color: black;
 }
 
+.lead-white {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: white;
+}
+
 /* Header */
 header {
   background-color: #141414;
