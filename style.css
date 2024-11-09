@@ -244,6 +244,41 @@ h2 {
   background-color: #00A6B7;
 }
 
+/* Style for Email Input Field */
+#sendfox_form_email {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #222;
+  background-color: #222;
+  color: #D4D4D4;
+}
+
+#sendfox_form_email::placeholder {
+  color: #A0A0A0;
+}
+
+/* Style for the Submit Button */
+#newsletterForm button, .btn-teal {
+  background-color: #00C6D7;
+  color: #1A1A1A;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+#newsletterForm button:hover, .btn-teal:hover {
+  background-color: #00A6B7;
+}
+
+/* Success Message Styling */
+#success-message {
+  font-size: 1rem;
+  color: #00C6D7;
+  margin-top: 10px;
+}
+
 /* Footer */
 footer {
   background-color: #141414;
