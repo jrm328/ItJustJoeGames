@@ -44,28 +44,32 @@
   </section>
 
   <!-- Content Section -->
-  <section id="content" class="p-10 bg-gray-900 text-gray-200">
-    <h2 class="text-3xl font-montserrat text-teal-400 mb-4 text-center">Content</h2>
-    <div class="youtube-content mb-10">
-      <h3 class="text-2xl font-montserrat text-teal-300 mb-4">YouTube</h3>
-      <div class="videos grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="video">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/9WqVxfLHYZY?si=xjQCF3qdr8-vpqbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="video">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/MQ8BogizoJ4?si=ldceGXLAx7yPzBP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+<section id="content" class="p-10 bg-gray-900 text-gray-200">
+  <h2 class="text-3xl font-montserrat text-teal-400 mb-4 text-center">Content</h2>
+  
+  <div class="youtube-content mb-10">
+    <h3 class="text-2xl font-montserrat text-teal-300 mb-4">YouTube</h3>
+
+    <!-- Videos Grid -->
+    <div class="videos">
+      <!-- Video Card 1 -->
+      <div class="video-card">
+        <iframe width="100%" height="180" src="https://www.youtube.com/embed/9WqVxfLHYZY?si=xjQCF3qdr8-vpqbA" title="YouTube video player" allowfullscreen></iframe>
+        <p>Logitech G Cloud, can it replace your console?</p>
       </div>
-      <a href="https://www.youtube.com/your-channel-link" target="_blank" class="cta-button mt-6 inline-block">Subscribe on YouTube</a>
+
+      <!-- Video Card 2 -->
+      <div class="video-card">
+        <iframe width="100%" height="180" src="https://www.youtube.com/embed/MQ8BogizoJ4?si=ldceGXLAx7yPzBP0" title="YouTube video player" allowfullscreen></iframe>
+        <p>Exploring the immersive world of DAVE THE DIVER. 🤿</p>
+      </div>
     </div>
 
-    <div class="podcast-content">
-      <h3 class="text-2xl font-montserrat text-teal-300 mb-4">The Game Loop Podcast</h3>
-      <iframe src="https://podcasters.spotify.com/pod/show/thegameloop/embed" width="100%" height="180" frameborder="0" scrolling="no" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <a href="https://podcasters.spotify.com/pod/show/thegameloop" target="_blank" class="cta-button mt-6 inline-block">Listen to More Episodes</a>
-    </div>
-  </section>
-
+    <!-- Call-to-Action to Subscribe -->
+    <a href="https://www.youtube.com/@ItsJustJoeGames?sub_confirmation=1" target="_blank" class="cta-button mt-6 inline-block">Subscribe on YouTube</a>
+  </div>
+</section>
+  
   <!-- Games Section -->
   <section id="games" class="p-10 bg-gray-800 text-gray-200">
     <h2 class="text-3xl font-montserrat text-teal-400 mb-4 text-center">Games in Development</h2>
