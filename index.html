@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Its Just Joe Games | Your Portal to the Future of Gaming</title>
-
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7431XCSGQQ"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Its Just Joe Games</title>
+    <link rel="shortcut icon" href="imgs/favIcon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7431XCSGQQ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -14,275 +15,63 @@
 
   gtag('config', 'G-7431XCSGQQ');
 </script>
-  
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
-  <!-- AOS Library for Animations -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
-  
-  <!-- Structured Data for SEO -->
-  <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "name": "Its Just Joe Games",
-  "url": "https://itsjustjoe.games",
-  "logo": "https://yourwebsite.com/logo.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Customer Support",
-    "email": "info@itsjustjoe.games"
-  }
-}
-</script>
-
- <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "VideoGame",
-  "name": "Out of Mana",
-  "description": "A fast-paced 2D top-down bullet hell shooter where a wizard fights through hordes of enemies.",
-  "genre": "Action",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Its Just Joe Games"
-  },
-  "image": "assets/oom-img.png",
-  "datePublished": "2025-03-27",
-  "inLanguage": "English",
-  "gamePlatform": "PC",
-  "url": "https://itsjustjoe.games/#games"
-}
-</script> 
-  
-  <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "VideoObject",
-  "name": "The Game Loop Podcast | Level 3: Respawn or Shutdown?",
-  "description": "The Game Loop is your go-to weekly podcast for all things gaming!",
-  "thumbnailUrl": "assets/gameloop-img.png",
-  "uploadDate": "2024-10-24T08:00:00+08:00",
-  "contentUrl": "https://www.youtube.com/watch?v=02BphSpl-zc",
-  "embedUrl": "https://www.youtube.com/embed/02BphSpl-zc?si=-kqy32i2E-m-AuYk",
-  "duration": "PT29M14S",
-  "interactionStatistic": {
-    "@type": "InteractionCounter",
-    "interactionType": "http://schema.org/WatchAction",
-    "userInteractionCount": 12345
-  }
-}
-</script>
-</head>
-<body>
-
-  <!-- Loading Animation -->
-  <div id="loader" class="loader"></div>
-
+  </head>
+  <body>
   <!-- Header -->
-  <header class="bg-dark py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="text-teal font-weight-bold">Its Just Joe Games</h1>
-      <nav class="d-none d-md-flex">
-        <a href="#home" class="text-light mx-3">Home</a>
-        <a href="#about" class="text-light mx-3">About Us</a>
-        <a href="#content" class="text-light mx-3">Content</a>
-        <a href="#games" class="text-light mx-3">Games</a>
-        <a href="#contact" class="text-light mx-3">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div class="header sticky">
+  <img class="logo" src="imgs/logo.png"></img>
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="colorbar"></br></div>
+  </div>
+  
+  <!-- Content -->
+  <div class="content">
+  <div class="mobile_Table">
+  <table>
+  <caption>Our Projects</caption>
+  <tr>
+  <td><a href="#"><img class="games" src="imgs/Family-Man-site-img.png"></img></a></td>
+  </tr>
+  <tr>
+  <td><a href="https://creators.spotify.com/pod/show/thegameloop"><img class="games" src="imgs/Game-Loop-Podcast.png"></img></a></td>
+  </tr>
+  <tr>  
+  <td><a href="https://www.youtube.com/@ItsJustJoeGames?sub=1"><img class="games" src="imgs/Subscribe.png"></img></a></td>
+  </tr>
+  </table>
+  </div>
 
-  <!-- Hero Section with Parallax Background -->
-  <section id="home" class="hero text-center text-light py-5" style="background-image: url('assets/bg-img.png');">
-    <div class="container" data-aos="fade-up">
-      <h1 class="display-4 font-weight-bold">Your Portal to the Future of Gaming</h1>
-      <p class="lead">Dive into cloud gaming, industry insights, and exclusive indie games with Its Just Joe Games — where gaming meets innovation.</p>
-      <a href="#content" class="cta-button mt-3" onclick="gtag('event', 'click', {'event_category': 'button', 'event_label': 'Explore'});">Explore Content</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-5 bg-dark text-light">
-    <div class="container text-center" data-aos="fade-up">
-      <h2 class="display-4 font-weight-bold text-teal">About Us</h2>
-      <p class="lead-white">Its Just Joe Games is dedicated to cloud gaming, indie development, and tech innovation. We keep gamers and tech enthusiasts at the forefront with insightful content.</p>
-      <img src="assets/about-img.png" alt="About Us" class="img-fluid mt-4">
-      <p class="lead-white">Founded by a passionate creator/gamer and U.S. Army veteran, It’s Just Joe Games began as a vision to bring gamers and tech lovers closer to the future of gaming. With a focus on cloud gaming and independent game development, we’re committed to making gaming accessible and exciting for everyone.</p>
-    </div>
-  </section>
-
-  <!-- Content Section with Modal for Videos -->
-  <section id="content" class="py-5 bg-light text-dark">
-    <div class="container">
-      <h2 class="display-4 font-weight-bold text-center text-teal mb-5">Content</h2>
-      <div class="row">
-        <div class="col-lg-6 mb-4">
-          <h3 class="font-weight-bold text-center">YouTube</h3>
-          <div class="card bg-dark text-light mb-3">
-            <a href="#" data-toggle="modal" data-target="#videoModal1" onclick="gtag('event', 'click', {'event_category': 'video', 'event_label': 'Video Modal'});">
-              <img src="assets/gameloop-img.png" class="card-img-top" alt="Video Placeholder">
-            </a>
-            <div class="card-body">
-              <span class="tag">Podcast</span>
-              <p class="card-text">The Game Loop is your go-to weekly podcast for all things gaming!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Video Modal -->
-      <div class="modal fade" id="videoModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">The Game Loop Podcast | Level 3: Respawn or Shutdown?</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <iframe width="100%" height="400" src="https://www.youtube.com/embed/02BphSpl-zc?si=-kqy32i2E-m-AuYk" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Games Section with Modals for Details -->
-  <section id="games" class="py-5 bg-dark text-light">
-    <div class="container text-center">
-      <h2 class="display-4 font-weight-bold text-teal">Games in Development</h2>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="card bg-dark text-light position-relative">
-            <img src="assets/OOM-GIF.gif" class="card-img-top" alt="Out of Mana">
-            <span class="progress-badge">In Development</span>
-            <div class="card-body">
-              <h4 class="card-title text-teal">Out of Mana</h4>
-              <p class="card-text">A fast-paced 2D top-down bullet hell shooter where a wizard fights through hordes of enemies.</p>
-              <a href="#" data-toggle="modal" data-target="#gameDetailModal1" class="cta-button mt-3" onclick="gtag('event', 'click', {'event_category': 'button', 'event_label': 'Game Read More'});">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Game Detail Modal -->
-      <div class="modal fade" id="gameDetailModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title lead">Out of Mana</h5>
-              <button type="button" class="close lead" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body lead">
-              <p>Out of Mana is a fast-paced 2D top-down bullet hell shooter where a wizard, stripped of his powers, has to fight through hordes of enemies using nothing but brute force. Players navigate through elemental dungeon levels, battling unique enemies and bosses with increasingly wild weapons, all while unraveling a mystery that hints at betrayal. It’s magic meets mayhem in a quirky, action-packed adventure.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-light text-dark">
-    <div class="container">
-      <h2 class="display-4 font-weight-bold text-center text-teal">Contact Us</h2>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <div class="card bg-dark text-light text-center">
-            <div class="card-body">
-              <h4 class="card-title">Get in Touch</h4>
-              <p>Email: <a href="mailto:info@itsjustjoe.games" class="text-teal">info@itsjustjoe.games</a></p>
-              <div class="d-flex justify-content-center mt-3">
-                <a href="https://www.youtube.com/@ItsJustJoeGames?sub_confirmation=1" class="text-teal mx-3"><i class="fab fa-youtube fa-2x"></i></a>
-                <a href="https://x.com/Its_Just_Joe_" class="text-teal mx-3"><i class="fab fa-twitter fa-2x"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Newsletter Signup with Validation -->
-        <div class="col-md-6 mb-4">
-          <div class="card bg-dark text-light text-center">
-            <div class="card-body">
-              <h4 class="card-title">Join Our Newsletter</h4>
-              <p>Get the latest updates straight to your inbox.</p>
-              <form method="post" action="https://sendfox.com/form/1kn2ly/m4j7k9" class="sendfox-form" id="m4j7k9" data-async="true" data-recaptcha="true">
-                 <p><label for="sendfox_form_email">Email:</label>
-                <input type="email" id="sendfox_form_email" placeholder="Enter your email" name="email" required class="form-control mb-3"></p>
-                <!-- Anti-Spam Hidden Field -->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                  <input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" />
-                </div>
-                <button type="submit" class="cta-button mt-3" onclick="gtag('event', 'click', {'event_category': 'button', 'event_label': 'Subscribe'});">Subscribe</button>
-              </form>
-            <!-- Success Message -->
-            <p id="success-message" style="display: none; color: #00C6D7; margin-top: 10px;">Thank you for subscribing!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="desktop_Table">
+  <table>
+  <caption>Our Projects</caption>
+  <tr>
+  <td><a href="#"><img class="games" src="imgs/Family-Man-site-img.png"></img></a></td>
+  <td><a href="https://creators.spotify.com/pod/show/thegameloop"><img class="games" src="imgs/Game-Loop-Podcast.png"></img></a></td>
+  </tr>
+  <tr>  
+  <td colspan="2"><a href="https://www.youtube.com/@ItsJustJoeGames?sub=1"><img class="games" src="imgs/Subscribe.png"></img></a></td>
+  </tr>
+  </table>
+  </div>
+  </div>
 
   <!-- Footer -->
-  <footer class="bg-dark text-center py-3 text-light">
-    <p>&copy; 2024 Its Just Joe Games - All Rights Reserved</p>
-  </footer>
-
-  <!-- SendFox Form Script -->
-  <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
-
-  <!-- Bootstrap JS and AOS for Scroll Animations -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-  <!-- Custom JS for Smooth Scroll and Form Validation -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
-
-      // Smooth Scroll
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function(e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
-        });
-      });
-
-      // Form redirecting
-      document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("m4j7k9");
-  const successMessage = document.getElementById("success-message");
-
-  form.addEventListener("submit", function(event) {
-    event.preventDefault();
-    // Asynchronous submission handled by SendFox
-    successMessage.style.display = "block";
-  });
-});
-
-      // Newsletter Form Validation and Success Alert
-      document.getElementById("newsletterForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-        alert("Thank you for subscribing!");
-      });
-    });
-
-    // Hide Loader After Page Load
-    window.addEventListener("load", function() {
-      document.getElementById("loader").style.display = "none";
-    });
-  </script>
-</body>
+  <div class="footer">
+  <table class="footer_Content">
+  <tr>
+  <td><a href="https://www.youtube.com/@ItsJustJoeGames?sub=1"><img class="socialicon" src="imgs/socials/youtube.svg"></img></a></td>
+  <td><a href="https://steamcommunity.com/id/its-just-joe/"><img class="socialicon" src="imgs/socials/steam.svg"></img></a></td>
+  <td><a href="https://bsky.app/profile/itsjustjoe.games"><img class="socialicon" src="imgs/socials/bluesky.svg"></img></a></td>
+  <td><a href="https://discord.gg/YWuESV3aTB"><img class="socialicon" src="imgs/socials/discord.svg"></img></a></td>
+  </tr>
+  <tr>
+  <td colspan="4">Copyright &copy 2024 Its Just Joe Games. All right reserved.</td>
+  </tr>
+  </table>
+  </div>
+  </body>
 </html>
