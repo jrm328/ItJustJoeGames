@@ -24,8 +24,8 @@ Below is an overview of the file structure:
 
 ```
 ├── index.html          # Main page HTML
-├── about.html          # About page (placeholder link in header)
-├── contact.html        # Contact page (placeholder link in header)
+├── about.html          # About page 
+├── contact.html        # Contact page
 ├── styles.css          # Main stylesheet for the website
 ├── imgs/               # Images and icons used on the site
 │   ├── favIcon.png     # Site favicon
@@ -52,7 +52,6 @@ You can visit the live website here: [It's Just Joe Games](https://yourusername.
 
 ## 📖 Planned Enhancements
 
-- Add an interactive **About** and **Contact** page.
 - Include animations or parallax effects in the hero section.
 - Expand project details with modals or dedicated pages.
 - Optimize for faster load times and enhanced SEO.
