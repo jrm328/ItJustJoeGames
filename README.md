@@ -39,7 +39,7 @@ Below is an overview of the file structure:
 
 ## 🌐 Live Website
 
-You can visit the live website here: [It's Just Joe Games](https://yourusername.github.io/repo-name)
+You can visit the live website here: [It's Just Joe Games](https://github.com/jrm328/ItJustJoeGames)
 
 ## 🛠️ How to Use
 
@@ -59,10 +59,10 @@ You can visit the live website here: [It's Just Joe Games](https://yourusername.
 ## 🖼️ Screenshots
 
 ### Desktop View
-![Desktop View Placeholder](https://placehold.co/600x400)
+![Desktop View](https://raw.githubusercontent.com/jrm328/ItJustJoeGames/refs/heads/main/img/site-preview.png)
 
 ### Mobile View
-![Mobile View Placeholder](https://placehold.co/300x500)
+![Mobile View](https://raw.githubusercontent.com/jrm328/ItJustJoeGames/refs/heads/main/img/site-mobile-preview.png)
 
 ## 🤝 Contributions
 
